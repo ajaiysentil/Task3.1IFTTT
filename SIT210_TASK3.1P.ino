@@ -12,14 +12,14 @@
 BH1750 lightMeter; 
 
 
-//please enter your sensitive data in the Secret tab
+//private data in secrets.h
 char ssid[] = SECRET_SSID;
 char pass[] = SECRET_PASSWORD;
 
 WiFiClient client;
 
 char   HOST_NAME[] = "maker.ifttt.com";
-String PATH_NAME = "/trigger/IFTTT trigger light sensor/with/key/bK8KiH8YCjnLFGSJfURUmX"; // change your EVENT-NAME and YOUR-KEY
+String PATH_NAME = "/trigger/IFTTT trigger light sensor/with/key/bK8KiH8YCjnLFGSJfURUmX"; 
 String queryString = "?value1=57&value2=25"; 
 
 bool aboveLimit = false; 
